@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ------------------------------ */
+/* ---------- HEADER ------------ */
+/* ------------------------------ */
+
+header {
+  background-color: rgba(37, 177, 121, 0.05);
+  padding-top: 6px;
+}
+
+nav {
+  min-height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.logo {
+  height: 54px;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-link {
+  color: #444;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: #29b67d;
+}
+
+.nav-link-active {
+  color: #29b67d;
+}
+
+/* ------------------------------ */
+/* ------- SECTION HERO --------- */
+/* ------------------------------ */
+
+.section-hero {
+  background-color: rgba(37, 177, 121, 0.05);
+  box-shadow: 0 1px 2px rgb(225, 225, 225);
+}
+
+.hero {
+  background-image: url("./img/stethoscope.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 84px;
+  align-items: center;
+}
+
+.top-angle-img {
+  margin-bottom: 10px;
+}
+
+.hero-textbox h1 {
+  color: #222;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.hero-textbox p {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.bottom-angle-img {
+  float: right;
+  margin-right: 5%;
+}
+
+.btn {
+  padding: 16px 36px;
+  background-color: #29b67d;
+  border-radius: 40px;
+  border: none;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #24a873;
+  transform: translateY(-5px);
+}
+
+.mouse-img {
+  float: right;
+  clear: both;
+}
+
+.hero-imgbox {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.greenbox-img {
+  width: 100%;
+  position: absolute;
+  right: 1%;
+  top: 20%;
+  z-index: -1;
+}
+
+.yellowbox-img {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  top: 23%;
+  z-index: -1;
+}
+
+.doctor-img {
+  width: 100%;
+  z-index: 10;
+}
